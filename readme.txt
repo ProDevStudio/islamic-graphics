@@ -1,5 +1,5 @@
-=== Plugin Name ===
-Contributors: imuslim
+=== Islamic Graphics ===
+Contributors: iMuslim
 Donate link: http://muslimmatters.org/become-an-ansaar/
 Tags: islam, islamic, muslim, arabic, prophet, muhammad, sallalahu 'alayhi wa salam, radiallahu anhu, radiallahu anhum, alayhis salam, subhanahu wa ta ala, SAW, RA, AS, SWT, shortcode, post, page, plugin, images, image
 Requires at least: 2.0.2
