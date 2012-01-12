@@ -4,7 +4,7 @@
 Plugin Name: Islamic Graphics
 Plugin URI: http://plugins.muslimmatters.org
 Description: Shortcodes for the insertion of graphics representing the common Islamic phrases: SAW, RA, SWT and AS, into Wordpress posts and pages.
-Version: 1.0.2
+Version: 1.0.3
 Author: Mehzabeen Ibrahim
 Author URI: http://imuslim.tv
 */

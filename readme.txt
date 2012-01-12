@@ -4,7 +4,7 @@ Donate link: http://muslimmatters.org/become-an-ansaar/
 Tags: islam, islamic, muslim, arabic, prophet, muhammad, sallalahu 'alayhi wa salam, radiallahu anhu, radiallahu anhum, alayhis salam, subhanahu wa ta ala, SAW, RA, AS, SWT, shortcode, post, page, plugin, images, image
 Requires at least: 2.0.2
 Tested up to: 3.2.1
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 
 Shortcode for the insertion of graphics representing the common Islamic phrases: SAW, RA, SWT and AS, into Wordpress posts and pages.
 
@@ -71,6 +71,9 @@ The other graphics were based on the font "Islamic Phrases", designed by AlMedia
 
 == Changelog ==
 
+= 1.0.3 =
+Replaced swt.png and swt_w.png images.
+
 = 1.0.2 =
 Fixed broken img src url.
 
@@ -82,6 +85,9 @@ Changed filenames of white images, and shortcode function used to insert them.
 
 
 == Upgrade Notice ==
+
+= 1.0.3 =
+Upgraded images for "subhanahu wa ta 'ala" phrase.
 
 = 1.0.2 =
 Fix for broken img src url - upgrade immediately.
