@@ -62,6 +62,13 @@ Yes. Images have the class reference 'islamic_graphic' to allow CSS customisatio
 The SAW graphic is based on the unicode symbol: ﷺ.
 The other graphics were based on the font "Islamic Phrases", designed by AlMedia.net, which is available to download for free, for personal use only, from http://www.almedia.net/free-arabic-fonts.htm.
 
+
+== Screenshots ==
+
+1. screenshot1.jpg - View of shortcodes in post editor.
+2. screenshot2.jpg - View of islamic graphics embedded in a post.
+
+
 == Changelog ==
 
 = 1.0.2 =
