@@ -33,14 +33,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 function insert_islamic_graphic( $atts, $content=null, $code="" ) {
 	extract( shortcode_atts( array(
 		'h' => '20',
-		'c' => '',
 	), $atts ) );
 	
 	$plugin_url = plugin_dir_url( "islamic_graphics.php" );
 	
-	if ("{$c}" == "w"){ $colour = "w"; } // ensures that the img url will not break if an invalid value is provided for {$c}
-	
-	return "<img class=\"islamic_graphic\" src=\"$plugin_url" . "islamic_graphics/img/$code". $colour . ".png\" height=\"{$h}px\">"; 
+	return "<img class=\"islamic_graphic\" src=\"$plugin_url" . "islamic_graphics/img/$code" . ".png\" height=\"{$h}px\">"; 
 	}
 
 // Add shortcodes
@@ -50,5 +47,12 @@ add_shortcode( 'ranhu', 'insert_islamic_graphic' );
 add_shortcode( 'ranhum', 'insert_islamic_graphic' );
 add_shortcode( 'saw', 'insert_islamic_graphic' );
 add_shortcode( 'swt', 'insert_islamic_graphic' );
+
+add_shortcode( 'alayhis_w', 'insert_islamic_graphic' );
+add_shortcode( 'ranha_w', 'insert_islamic_graphic' );
+add_shortcode( 'ranhu_w', 'insert_islamic_graphic' );
+add_shortcode( 'ranhum_w', 'insert_islamic_graphic' );
+add_shortcode( 'saw_w', 'insert_islamic_graphic' );
+add_shortcode( 'swt_w', 'insert_islamic_graphic' );
 
 ?>
