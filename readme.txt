@@ -59,10 +59,8 @@ E.g., the shortcode to insert the white "subhanahu wa ta 'ala" graphic: [swt_w]
 Yes. Images have the class reference 'islamic_graphic' to allow CSS customisation.
 
 = Who designed the graphics? =
-The graphics supplied with this plugin were originally designed by AlMedia.net.
-The font from which the graphics were generated is available to download for free, for personal use only.
-http://www.almedia.net/free-arabic-fonts.htm
-
+The SAW graphic is based on the unicode symbol: ﷺ.
+The other graphics were based on the font "Islamic Phrases", designed by AlMedia.net, which is available to download for free, for personal use only, from http://www.almedia.net/free-arabic-fonts.htm.
 
 == Changelog ==
 
