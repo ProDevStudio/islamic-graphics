@@ -80,3 +80,15 @@ Changed filenames of white images, and shortcode function used to insert them.
 = 1.0.0 =
 * Initial release.
 
+
+== Upgrade Notice ==
+
+= 1.0.2 =
+Fix for broken img src url - upgrade immediately.
+
+= 1.0.1 =
+Changed filenames of white images, and shortcode function used to insert them.
+
+
+
+
