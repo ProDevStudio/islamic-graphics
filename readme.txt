@@ -31,7 +31,7 @@ Plugin produced by http://MuslimMatters.org
 
 == Frequently Asked Questions ==
 
-= How do I use the shortcakes to insert islamic graphics? =
+= How do I use the shortcodes to insert the islamic graphics? =
 The basic shortcode structure is [shortcode_name h="" c=""]
 
 The following are a list of possible values for shortcode_name, and the islamic phrases that will result when they are used:
