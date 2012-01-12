@@ -20,6 +20,8 @@ Phrases included:
 * sallalahu 'alayhi wa salam
 * subhanahu wa ta 'ala
 
+Plugin produced by http://MuslimMatters.org
+
 
 == Installation ==
 
