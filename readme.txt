@@ -71,6 +71,9 @@ The other graphics were based on the font "Islamic Phrases", designed by AlMedia
 
 == Changelog ==
 
+= 1.0.5 =
+Images have been resized to prevent aliasing. Function now includes condition: when 'h' <= 20, 20 pixel tall images are used, else 40 pixel tall images are used.
+
 = 1.0.4 =
 Replaced swt.png and swt_w.png images.
 
@@ -88,6 +91,9 @@ Changed filenames of white images, and shortcode function used to insert them.
 
 
 == Upgrade Notice ==
+
+= 1.0.5 =
+Changes have been made to improve the quality of embedded islamic images.
 
 = 1.0.4 =
 Upgraded images for "subhanahu wa ta 'ala" phrase.

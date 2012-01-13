@@ -36,8 +36,15 @@ function insert_islamic_graphic( $atts, $content=null, $code="" ) {
 	), $atts ) );
 	
 	$plugin_url = plugin_dir_url( "islamic_graphics.php" );
+
+	$html = "<img class=\"islamic_graphic\" src=\"$plugin_url" . "islamic-graphics/img/";
 	
-	return "<img class=\"islamic_graphic\" src=\"$plugin_url" . "islamic-graphics/img/$code" . ".png\" height=\"{$h}px\">"; 
+	if ("{$h}" <= 20) { $html .= "20"; }
+	else { $html .= "40"; }
+	
+	$html .= "/$code" . ".png\" height=\"{$h}px\">";
+	
+	return $html; 
 	}
 
 // Add shortcodes
