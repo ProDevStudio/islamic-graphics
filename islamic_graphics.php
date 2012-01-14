@@ -4,7 +4,7 @@
 Plugin Name: Islamic Graphics
 Plugin URI: http://plugins.muslimmatters.org
 Description: Shortcodes for the insertion of graphics representing the common Islamic phrases: SAW, RA, SWT and AS, into Wordpress posts and pages.
-Version: 1.0.5
+Version: 1.0.6
 Author: Mehzabeen Ibrahim
 Author URI: http://imuslim.tv
 */
@@ -49,6 +49,9 @@ function insert_islamic_graphic( $atts, $content=null, $code="" ) {
 
 // Add shortcodes
 add_shortcode( 'alayhis', 'insert_islamic_graphic' );
+add_shortcode( 'rahimaha', 'insert_islamic_graphic' );
+add_shortcode( 'rahimahu', 'insert_islamic_graphic' );
+add_shortcode( 'rahimahum', 'insert_islamic_graphic' );
 add_shortcode( 'ranha', 'insert_islamic_graphic' );
 add_shortcode( 'ranhu', 'insert_islamic_graphic' );
 add_shortcode( 'ranhum', 'insert_islamic_graphic' );
@@ -56,6 +59,9 @@ add_shortcode( 'saw', 'insert_islamic_graphic' );
 add_shortcode( 'swt', 'insert_islamic_graphic' );
 
 add_shortcode( 'alayhis_w', 'insert_islamic_graphic' );
+add_shortcode( 'rahimaha_w', 'insert_islamic_graphic' );
+add_shortcode( 'rahimahu_w', 'insert_islamic_graphic' );
+add_shortcode( 'rahimahum_w', 'insert_islamic_graphic' );
 add_shortcode( 'ranha_w', 'insert_islamic_graphic' );
 add_shortcode( 'ranhu_w', 'insert_islamic_graphic' );
 add_shortcode( 'ranhum_w', 'insert_islamic_graphic' );

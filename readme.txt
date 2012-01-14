@@ -1,10 +1,10 @@
 === Islamic Graphics ===
 Contributors: iMuslim
 Donate link: http://muslimmatters.org/become-an-ansaar/
-Tags: islam, islamic, muslim, arabic, prophet, muhammad, sallalahu 'alayhi wa salam, radiallahu anhu, radiallahu anhum, alayhis salam, subhanahu wa ta ala, SAW, RA, AS, SWT, shortcode, post, page, plugin, images, image
+Tags: islam, islamic, muslim, arabic, prophet, muhammad, sallalahu 'alayhi wa salam, radiallahu anhu, radiallahu anhum, alayhis salam, subhanahu wa ta ala, rahimaha Allah, rahimahu Allah, rahimahum Allah, SAW, RA, AS, SWT, shortcode, post, page, plugin, images, image
 Requires at least: 2.0.2
 Tested up to: 3.2.1
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 
 Shortcode for the insertion of graphics representing the common Islamic phrases: SAW, RA, SWT and AS, into Wordpress posts and pages.
 
@@ -14,6 +14,9 @@ A simple set of shortcodes to allow authors to insert graphics that represent th
 
 Phrases included:
 * 'alayhis salam
+* rahimaha Allah
+* rahimahu Allah
+* rahimahum Allah
 * radiallahu anha
 * radiallahu anhu
 * radiallahu anhum
@@ -38,6 +41,9 @@ The basic shortcode structure is [shortcode_name h=""]
 
 The following are a list of possible values for shortcode_name, and the islamic phrases that will result when they are used:
 * alayhis	- 'alayhis salam
+* rahimaha	- rahimaha Allah
+* rahimahu	- rahimahu Allah
+* rahimahum	- rahimahum Allah
 * ranha		- radiallahu anha
 * ranhu		- radiallahu anhu
 * ranhum 	- radiallahu anhum
@@ -71,6 +77,9 @@ The other graphics were based on the font "Islamic Phrases", designed by AlMedia
 
 == Changelog ==
 
+= 1.0.6. =
+Added images and codes for rahimahu Allah, rahimaha Allah and rahimahum Allah.
+
 = 1.0.5 =
 Images have been resized to prevent aliasing. Function now includes condition: when 'h' <= 20, 20 pixel tall images are used, else 40 pixel tall images are used.
 
@@ -91,6 +100,9 @@ Changed filenames of white images, and shortcode function used to insert them.
 
 
 == Upgrade Notice ==
+
+= 1.0.6 =
+Added images and codes for rahimahu Allah, rahimaha Allah and rahimahum Allah.
 
 = 1.0.5 =
 Changes have been made to improve the quality of embedded islamic images.
