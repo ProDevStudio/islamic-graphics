@@ -66,7 +66,8 @@ Yes. Images have the class reference 'islamic_graphic' to allow CSS customisatio
 
 = Who designed the graphics? =
 The SAW graphic is based on the unicode symbol: ﷺ.
-The other graphics were based on the font "Islamic Phrases", designed by AlMedia.net, which is available to download for free, for personal use only, from http://www.almedia.net/free-arabic-fonts.htm.
+AS and RA graphics were based on the font "Islamic Phrases", designed by AlMedia.net, which is available to download for free, for personal use only, from http://www.almedia.net/free-arabic-fonts.htm.
+Other graphics were hand drawn.
 
 
 == Screenshots ==
