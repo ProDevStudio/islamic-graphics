@@ -4,7 +4,7 @@ Donate link: http://muslimmatters.org/become-an-ansaar/
 Tags: islam, islamic, muslim, arabic, prophet, muhammad, sallalahu 'alayhi wa salam, radiallahu anhu, radiallahu anhum, alayhis salam, subhanahu wa ta ala, rahimaha Allah, rahimahu Allah, rahimahum Allah, SAW, RA, AS, SWT, shortcode, post, page, plugin, images, image
 Requires at least: 2.0.2
 Tested up to: 3.2.1
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 
 Shortcode for the insertion of graphics representing the common Islamic phrases: SAW, RA, SWT and AS, into Wordpress posts and pages.
 
@@ -61,13 +61,15 @@ Append "_w" to the shortcode_name.
 
 E.g., the shortcode to insert the white "subhanahu wa ta 'ala" graphic: [swt_w]
 
+= How do I see the meaning of the graphic in English? =
+Hover the mouse cursor over the embedded image, and the meaning and transliteration should appear.
+
 = Can I customise the graphic via CSS? =
 Yes. Images have the class reference 'islamic_graphic' to allow CSS customisation.
 
 = Who designed the graphics? =
 The SAW graphic is based on the unicode symbol: ﷺ.
-AS and RA graphics were based on the font "Islamic Phrases", designed by AlMedia.net, which is available to download for free, for personal use only, from http://www.almedia.net/free-arabic-fonts.htm.
-Other graphics were hand drawn.
+The other graphics were based on the font "Islamic Phrases", designed by AlMedia.net, which is available to download for free, for personal use only, from http://www.almedia.net/free-arabic-fonts.htm.
 
 
 == Screenshots ==
@@ -78,7 +80,10 @@ Other graphics were hand drawn.
 
 == Changelog ==
 
-= 1.0.6. =
+= 1.0.7 =
+Added alt and title text to images.
+
+= 1.0.6 =
 Added images and codes for rahimahu Allah, rahimaha Allah and rahimahum Allah.
 
 = 1.0.5 =
@@ -101,6 +106,9 @@ Changed filenames of white images, and shortcode function used to insert them.
 
 
 == Upgrade Notice ==
+
+= 1.0.7 =
+Added alt and title text to images to show the transliterated version of the Islamic graphic, along with the translated meaning in English.
 
 = 1.0.6 =
 Added images and codes for rahimahu Allah, rahimaha Allah and rahimahum Allah.
