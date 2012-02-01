@@ -4,7 +4,7 @@
 Plugin Name: Islamic Graphics
 Plugin URI: http://plugins.muslimmatters.org
 Description: Shortcodes for the insertion of graphics representing the common Islamic phrases: SAW, RA, SWT and AS, into Wordpress posts and pages.
-Version: 1.1.0
+Version: 1.1.1
 Author: Mehzabeen Ibrahim
 Author URI: http://imuslim.tv
 */
@@ -41,77 +41,64 @@ function islamic_graphics_menu() {
 
 // Register settings
 function islamic_graphics_init(){
+    add_settings_section('islamic_graphics_main', 'Main Settings', 'islamic_graphics_section_text', 'islamic-graphics');
+    add_settings_field('islamic_graphics_default_height', 'Default height (pixels)', 'add_field_default_height', 'islamic-graphics', 'islamic_graphics_main');
+    add_settings_field('islamic_graphics_default_colour', 'Default colour', 'add_field_default_colour', 'islamic-graphics', 'islamic_graphics_main');
+    add_settings_field('islamic_graphics_display_type', 'Display type', 'add_field_display_type', 'islamic-graphics', 'islamic_graphics_main');
+    
     register_setting( 'islamic-graphics-option-group', 'islamic_graphics_default_height', 'validate_default_height' );
     register_setting( 'islamic-graphics-option-group', 'islamic_graphics_display_type' );
     register_setting( 'islamic-graphics-option-group', 'islamic_graphics_default_colour' );
  }
+ 
+function islamic_graphics_section_text(){
+    echo '<p>Use the following options to alter the display of Islamic Graphics in your posts and pages.</p>';
+}
 
-// HTML for options page
-function islamic_graphics_options() {
-	if (!current_user_can('manage_options'))  {
-		wp_die( __('You do not have sufficient permissions to access this page.') );
-	}
-?>
-    <div class="wrap">
-        <h2>Islamic Graphics - Options</h2>
-        <p>Use the following options to alter the display of Islamic Graphics in your posts and pages.</p>
-        <form method="post" action="options.php">
-        <?php settings_fields( 'islamic-graphics-option-group' ); ?>
-        <?php do_settings_fields( 'islamic-graphics-option-group' ); ?>
-        <!-- Input for default img height -->
-        <p>Default height of embedded images in pixels (value > 40 will be accepted, but not recommended!)
-        <br/><input type="text" name="islamic_graphics_default_height" value="<?php echo get_option('islamic_graphics_default_height', 20); ?>" />    
-        </p>
-        <!-- Options for Islamic Graphics colour -->
-        <p>Default colour of images?
-        <br/><select name="islamic_graphics_default_colour" id="islamic_graphics_default_colour">
-                <!-- Select the option that is stored in wp_options; else select black -->
-                <?php
-                    $display_type_options = array(
-                            "black" => "Black",
-                            "white" => "White");
-                    
-                    $stored_type = get_option('islamic_graphics_default_colour', 'black');
-                    
-                    foreach ($display_type_options as $key => $row) {
-                        echo '<option value="' . $key . '"';
-                        if ($stored_type == $key) { echo 'selected="selected"'; }
-                        echo '>'. $row .'</option>';
-                    }                
-                ?>
-           </select>
-        </p>        
-        <!-- Options for Islamic Graphics type -->
-        <p>How do you wish to display the Islamic Graphics?
-        <br/><select name="islamic_graphics_display_type" id="islamic_graphics_display_type">
-                <!-- Select the option that is stored in wp_options; else select images -->
-                <?php
-                    $display_type_options = array(
-                            "images" => "Images only",
-                            "images_trans" => "Images (with translation)",
-                            "text_rom_trans" => "Romanized text (with translation)",
-                            "text_rom" => "Romanized text only",
-                            "text_trans" => "Translation only");
-                    
-                    $stored_type = get_option('islamic_graphics_display_type', 'images');
-                    
-                    foreach ($display_type_options as $key => $row) {
-                        echo '<option value="' . $key . '"';
-                        if ($stored_type == $key) { echo 'selected="selected"'; }
-                        echo '>'. $row .'</option>';
-                    }                
-                ?>
-           </select>
-        </p>
-        <!-- Submit Button -->
-        <p class="submit">
-        <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
-        </p>
-        </form>
-    </div>
-        
-<?php }
+function add_field_default_height(){   
+    echo '<input type="text" name="islamic_graphics_default_height" value="';
+    echo get_option('islamic_graphics_default_height', 20);
+    echo '" />';           
+}
 
+function add_field_default_colour(){   
+    echo '<select name="islamic_graphics_default_colour" id="islamic_graphics_default_colour">';
+    
+    $display_type_options = array(
+            "black" => "Black",
+            "white" => "White");
+
+    $stored_type = get_option('islamic_graphics_default_colour', 'black');
+
+    foreach ($display_type_options as $key => $row) {
+        echo '<option value="' . $key . '"';
+        if ($stored_type == $key) { echo 'selected="selected"'; }
+        echo '>'. $row .'</option>';
+    }
+    
+    echo '</select>';        
+}
+
+function add_field_display_type(){   
+    echo '<select name="islamic_graphics_display_type" id="islamic_graphics_display_type">';
+    
+        $display_type_options = array(
+                "images" => "Images only",
+                "images_trans" => "Images (with translation)",
+                "text_rom_trans" => "Romanized text (with translation)",
+                "text_rom" => "Romanized text only",
+                "text_trans" => "Translation only");
+
+        $stored_type = get_option('islamic_graphics_display_type', 'images');
+
+        foreach ($display_type_options as $key => $row) {
+            echo '<option value="' . $key . '"';
+            if ($stored_type == $key) { echo 'selected="selected"'; }
+            echo '>'. $row .'</option>';
+        } 
+    
+    echo '</select>';        
+}
 
 // Validate height input
 function validate_default_height($input) {
@@ -122,6 +109,24 @@ function validate_default_height($input) {
     }
     return $newinput;
 }
+
+// HTML for options page
+function islamic_graphics_options() {
+	if (!current_user_can('manage_options'))  {
+		wp_die( __('You do not have sufficient permissions to access this page.') );
+	}
+?>
+    <div class="wrap">
+        <h2>Islamic Graphics - Options Page</h2>
+        <form method="post" action="options.php">
+        <?php settings_fields( 'islamic-graphics-option-group' ); ?>
+        <?php do_settings_sections('islamic-graphics'); ?>
+        <!-- Submit Button -->
+        <p class="submit"> <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" /></p>
+        </form>
+    </div>
+        
+<?php }
 
 
 
