@@ -42,14 +42,23 @@ Plugin produced by http://MuslimMatters.org
 The basic shortcode structure is [shortcode_name h="" c=""]
 
 The following are a list of possible values for shortcode_name, and the islamic phrases that will result when they are used:
+
 alayhis         - 'alayhi'l-salām, peace be upon him
+
 rahimaha	- raḥimahā Allāh, may Allah have mercy upon her
+
 rahimahu	- raḥimahullāh, may Allah have mercy upon him
+
 rahimahum	- raḥimahum Allāh, may Allah have mercy upon them
+
 ranha		- raḍyAllāhu 'anha, may Allah be pleased with her
+
 ranhu		- raḍyAllāhu 'anhu, may Allah be pleased with him
+
 ranhum          - raḍyAllāhu 'anhum, may Allah be pleased with them
+
 saw		- ṣallallāhu 'alayhi wa sallam, peace and blessings of Allah be upon him
+
 swt		- subḥānahu wa ta'āla, glorified and exalted be He
 
 The h and c attributes are optional and allow you to override the plugin's default settings.
@@ -58,8 +67,11 @@ The h attribute controls the image height in pixels. Plugin default is 20px.
 The c attribute sets the image colour: 'black' or 'white'. Plugin default is 'black'.
 
 E.g., to insert the "ṣallallāhu 'alayhi wa sallam" graphic with a default height and colour, use: [saw]
+
 E.g., to insert the "'alayhi'l-salām" graphic with an override height of 25px and default colour, use: [alayhis h="25"]
+
 E.g., to insert the "subḥānahu wa ta'āla" graphic with a default height and override colour of white, use: [swt c="white"]
+
 E.g., to insert the "raḥimahullāh" graphic with an override height of 18px and override colour of black, use: [rahimahu h="18" c="black"]
 
 You can set your own default values for height and colour via the Options page, under Dashboard > Settings > Islamic Graphics.
